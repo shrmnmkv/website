@@ -1,59 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shreeman Muruganandam - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="assets/icons/favicons-32x32.png"
+            />
+        <link 
+            rel = "stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+            />
+        <link
+            rel="apple-toch-icon"
+            sizes="180x180"
+            href="assets/icons/apple-toch-icon.png"
+        />
+        <link rel="stylesheet" href= 
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> 
+        <title>Shreeman Muruganandam | Web Developer</title>
+    </head>
+
+    <body>
         <nav>
-            <h1>Your Name</h1>
+            <h1>SHREEMAN MURUGANANDAM</h1>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
             </ul>
+            <button class="burger-menu" id="burger-menu">
+                <ion-icon class="bars" name="menu-outline"></ion-icon>
+            </button>
         </nav>
-    </header>
-    
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I am Shreeman Muruganandam, a student of SRM University. Currently a second year student, I am increadibly motivated and devout listener. My personal philosophy involves learning and listening to experienced people. I am motivated to learn something new everyday and throughly curious about the world of computing. 
-            True dedication only comes from passion and love one has for their professsion. And hardwork does not exist for this type of person since, love never hurts. I sinciery </p>
-        </div>
-    </section>
-    
-    <section id="portfolio">
-        <div class="container">
-            <h2>My Portfolio</h2>
-            <div class="portfolio-item">
-                <img src="project1.jpg" alt="Project 1">
-                <h3>Project 1</h3>
-                <p>Description of project 1.</p>
+        <section class="hero" id="about">
+            <img
+                src="hero.jpg"
+                alt="happy-coder"
+                loading="lazy"
+                class="hero-img"
+                />
+            <div class="bio animate__animated animate__shakeX">
+                <h2 class="bio-title">About Me</h2>
+                <p class ="bio-text">
+                    Hey, this is Shreeman, a second year student. Smart, attentive and curious
+                </p>
             </div>
-            <div class="portfolio-item">
-                <img src="project2.jpg" alt="Project 2">
-                <h3>Project 2</h3>
-                <p>Description of project 2.</p>
+        </section>
+        <section class="more-about">
+            <h2>More About Me</h2>
+            <p>I am a junior at SRMIST, majoring in Computer Science Engineering with specialization in Cloud Computing. Ever since I was a kid, I had a keen interest in computers. I am an introvert so a spent (and still do) an un  healthy amount of time on the internet. This grew into an obsession in coding and any related to computer science. .</p>
+            <p>With a keen eye, I stay in touch with the lastest cutting edge innovations in Computing world. My general philosophy in life is that I always listen more that talk, hence it allows me know more about people and experiences I nerver had.</p>
+            <p>I am a driven individual who is self determined, smart, studious and aiming to create a meaningful and lasting impact on the tech field, which so love and respect.</p>
+        </section>
+        <section class = "more-about">
+            <h2>Repertoire</h2>
+            <p>CGPA Semester I : 9.591</p>
+            <p>CGPA Semester II: 9.524</p>
+            <p>Hackerrank - Total Stars : 15</p>
+        </section>
+        <section class = "more-about">
+            <h2>Projects</h2>
+            <a href = "https://github.com/shrmnmkv/master/blob/main/PDF2Audio.py">PDF to Audio Convertor</a><br>
+            <a href="https://github.com/shrmnmkv/master/blob/main/chat_app_client.py">Multithreaded Chat Application</a><br>
+            <a href="https://github.com/shrmnmkv/master/blame/main/chat_app_client.py">Daily Task Manager</a>
+        </section>
+        <section class="skills" id="skills">
+            <h2 class="skills-header">My Skills</h2>
+            
+            <div class="skills-warpper">
+                <div class="first-set animate__animated animate__pulse">
+                    <img src="icons8-html-5.svg" alt="skllz" loading="lazy" class="icon icon-carf" />
+                    <img src="icons8-css.png" alt="skllz" loading="lazy" class="icon icon-card" />
+                </div>
+
+                <div class="second-set animate__animated animate__pulse">
+                    <img src="icons8-javascript.png" alt="skillz" loading="lazy" class="icon icon-cord" />
+                </div>
             </div>
-            <!-- Add more portfolio items as needed -->
-        </div>
-    </section>
-    
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>You can reach me at your@email.com</p>
-        </div>
-    </section>
-    
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 Your Name</p>
-        </div>
-    </footer>
-</body>
+        </section>
+        <section class="more-about">
+            <h2>Socials</h2>
+            <center>
+            <a href="https://github.com/shrmnmkv" class="fa fa-linkedin"></a> 
+            <a href="https://www.linkedin.com/in/shreeman-muruganandam-1b2388274/" class="fa fa-github"></a>
+            </center> 
+        </section>
+    </body>
 </html>
